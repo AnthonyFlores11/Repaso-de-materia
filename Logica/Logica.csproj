@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{204064A1-9A88-426E-B28F-0B009E6CF2CA}</ProjectGuid>
+    <ProjectGuid>{719DA3EC-14FE-4EE0-8F02-81C8A7015852}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AccesoDatos</RootNamespace>
-    <AssemblyName>AccesoDatos</AssemblyName>
+    <RootNamespace>Logica</RootNamespace>
+    <AssemblyName>Logica</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion.cs" />
+    <Compile Include="manejoAutomoviles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{204064a1-9a88-426e-b28f-0b009e6cf2ca}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{22bd3cea-4b7b-4abf-8746-1206684dd93c}</Project>
       <Name>Entidades</Name>
